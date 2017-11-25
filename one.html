@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>南山南</title>
+<link rel="stylesheet" type="text/css" href="css/bases.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<style>
+
+.main{
+	background-image:url(a.jpg);
+	background-position:center;
+	width:500px;
+	height:500px;
+	text-align:center;
+	
+}
+
+
+body{
+background-image: -moz-radial-gradient(ellipse closest-side, #ffffff, #d4e2af);
+  background-image: -webkit-radial-gradient(ellipse closest-side, #ffffff, #d4e2af);
+  background-image: radial-gradient(ellipse closest-side, #ffffff, #d4e2af);
+  -moz-perspective: 1000px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  vertical-align:middle;
+
+	color: #D5D6E2;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
+}
+
+span.name{
+	position:absolute;
+	left:500px;
+	top:130px;
+	color:#fff;
+	font-size:50px;
+	}
+	
+
+span.word1{
+	position:absolute;
+	left:500px;
+	top:210px;
+	color:#fff;
+	font-size:30px;
+	}
+span.word2{
+	position:absolute;
+	left:500px;
+	top:270px;
+	color:#fff;
+	font-size:30px;
+	}
+span.word3{
+	position:absolute;
+	left:500px;
+	top:340px;
+	color:#fff;
+	font-size:30px;
+	}
+span.word4{
+	position:absolute;
+	left:500px;
+	top:410px;
+	color:#fff;
+	font-size:30px;
+	}
+span.word5{
+	position:absolute;
+	left:500px;
+	top:480px;
+	color:#fff;
+	font-size:30px;
+	}
+</style>
+
+<body>
+
+
+<div style="margin:auto auto;">
+<p style="text-align:center"><img src="xd.jpg" width="900px" height="720px">
+
+<span class="word0">“</span>
+<strong><span id="demo" class="name">
+
+我是文字
+
+</span></strong>
+<span class="word1">在一个暖洋洋的午后</span>
+
+<span class="word2">你惬意的躺在四运的草地上</span>
+<span class="word3">欣赏落日余晖</span>
+<span class="word4">月光姣姣</span>
+<span class="word5">但仍比不过身边身边无数情侣的甜蜜暴击</span>
+
+
+</p>
+
+</div>
+
+
+<p style="font-size:30px;color:#777;text-align:center;font-family:"Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;">点击下方按钮继续观看</p>
+<p style="font-size:30px;color:#777;text-align:center;font-family:"Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;">西大的故事</p>
+
+
+
+<script language="javascript">
+var url=decodeURI(location.search);
+var Request = new Object();
+if(url.indexOf("?")!=-1){
+    var str = url.substr(1)　//去掉?号
+    strs = str.split("&");
+    for(var i=0;i<strs.length;i++){
+        Request[strs[i ].split("=")[0]]=unescape(strs[i].split("=")[1]);
+    }
+}
+
+
+
+
+document.getElementById("demo").innerHTML=Request["name"];
+window.document.title=Request["name"]+"的故事";
+
+</script>
+
+
+<a href="index.html">
+<figure>
+
+  <div>
+	<span class="face">返回</span>
+	<span class="face">返回</span>
+  </div>
+</figure>
+</a>
+<p style="color:#777;text-align:center;font-family:"Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;">共青团西南大学委员会青年新媒体中心</p> 
+
+
+
+</body>
+</html>
